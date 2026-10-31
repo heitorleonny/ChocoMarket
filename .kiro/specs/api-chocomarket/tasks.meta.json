@@ -1,0 +1,518 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "1.1 Consolidar configuração de banco, sessões e metadados SQLAlchemy": [
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793451585711
+      },
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793451591586
+      },
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793451695140
+      }
+    ],
+    "1.2 Criar modelos comuns, timestamps, enums e convenções de UUID": [
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793451585713
+      },
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793451700963
+      },
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793451817397
+      }
+    ],
+    "1.3 Implementar modelos SQLAlchemy de produto, pedido, item e idempotência": [
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793451585716
+      },
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793451823305
+      },
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793451983694
+      }
+    ],
+    "1.4 Configurar migrations/schema inicial sem remover dados válidos existentes": [
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793451585717
+      },
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793451988791
+      },
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793452125818
+      }
+    ],
+    "2.1 Criar tipos de erro de domínio e envelopes `Problem_Response`": [
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793451585719
+      },
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793451700967
+      },
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793451817392
+      }
+    ],
+    "2.2 Adicionar middleware de request ID e handlers globais de erro": [
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793451585721
+      },
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793451823309
+      },
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793451983697
+      }
+    ],
+    "2.3 Completar configuração e validação de JWT Bearer": [
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793451585723
+      },
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793451823313
+      },
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793451983691
+      }
+    ],
+    "2.4 Criar dependências de usuário ativo, administrador e autenticação opcional": [
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793451585725
+      },
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793451988798
+      },
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793452125815
+      }
+    ],
+    "3.1 Criar schemas, repository e projeções seguras de usuários": [
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793451585726
+      },
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793451988794
+      },
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793452125811
+      }
+    ],
+    "3.2 Preservar e adaptar POST /v1/users com idempotência opcional": [
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793451585728
+      },
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793452130827
+      },
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793452392466
+      }
+    ],
+    "3.3 Implementar listagem administrativa de usuários com filtros e cursor": [
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793451585729
+      },
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793452414578
+      },
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793452558964
+      }
+    ],
+    "3.4 Implementar consulta, patch, desativação e troca de senha de usuários": [
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793451585731
+      },
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793452566714
+      },
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793452695273
+      }
+    ],
+    "4.1 Criar schemas, repository e regras de transição de produto": [
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793451585732
+      },
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793451988864
+      },
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793452125878
+      }
+    ],
+    "4.2 Implementar listagem e consulta pública/admin de produtos": [
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793451585733
+      },
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793452712375
+      },
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793452849127
+      }
+    ],
+    "4.3 Implementar criação, patch e exclusão lógica de produtos": [
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793451585735
+      },
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793452851912
+      },
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793452988451
+      }
+    ],
+    "5.1 Implementar canonicalização, fingerprint e armazenamento idempotente": [
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793451585736
+      },
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793452991159
+      },
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793453154411
+      }
+    ],
+    "5.2 Criar schemas, repository e cálculo monetário de pedidos": [
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793451585738
+      },
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793453156938
+      },
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793453259210
+      }
+    ],
+    "5.3 Implementar criação atômica de pedidos e redução de estoque": [
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793451585739
+      },
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793453262437
+      },
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793453427970
+      }
+    ],
+    "6.1 Implementar listagem de pedidos com visão, filtros e paginação": [
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793451585741
+      },
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793453433964
+      },
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793453571270
+      }
+    ],
+    "6.2 Implementar consulta individual com proteção de propriedade": [
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793451585742
+      },
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793453573989
+      },
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793453656633
+      }
+    ],
+    "6.3 Implementar cancelamento transacional e devolução única de estoque": [
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793451585743
+      },
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793453659649
+      },
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793453798500
+      }
+    ],
+    "7.1 Criar Pagination_Service com cursor assinado e visão vinculada": [
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793451585745
+      },
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793452130830
+      },
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793452392462
+      }
+    ],
+    "8.1 Registrar routers e dependências na aplicação FastAPI": [
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793451585746
+      }
+    ],
+    "8.2 Ajustar serializadores e schemas de sucesso ao OpenAPI": [
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793451585747
+      }
+    ],
+    "9.1 Organizar fixtures e comandos de teste por camada": [
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793451585749
+      }
+    ],
+    "10. Checkpoint de implementação incremental": [
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793451585750
+      }
+    ],
+    "11. Checkpoint final de qualidade": [
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793451585751
+      }
+    ],
+    "2. Implementar erros, request ID, autenticação e autorização": [
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793452125820
+      }
+    ],
+    "1. Preparar fundação persistente e infraestrutura transversal": [
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793452125823
+      }
+    ],
+    "7. Implementar paginação por cursor e filtros compartilhados": [
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793452392469
+      }
+    ],
+    "3. Concluir módulo de usuários sem quebrar o cadastro existente": [
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793452695277
+      }
+    ],
+    "4. Implementar catálogo, estoque e estados de produtos": [
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793452988453
+      }
+    ],
+    "5. Implementar pedidos, idempotência e transações de estoque": [
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793453427972
+      }
+    ],
+    "6. Implementar consulta e cancelamento de pedidos": [
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793453798505
+      }
+    ],
+    "1.5 Testar isolamento de banco, foreign keys, índices e restrições únicas": [
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793453810263
+      },
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793453894949
+      }
+    ],
+    "2.5 Testar autenticação, autorização, configuração segura e envelopes de erro": [
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793453810366
+      },
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793453895478
+      }
+    ],
+    "2.6 Property 1: credenciais inválidas interrompem rotas protegidas": [
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793453901182
+      },
+      {
+        "executionId": "fd5b34ad-ba36-42a1-a2a0-6326f67601c9",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793453972261
+      }
+    ],
+    "2.7 Property 2: usuário inativo não acessa recursos protegidos": [
+      {
+        "executionId": "f2a8cc9e-b817-4abe-a441-121d7e469115",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793454211199
+      },
+      {
+        "executionId": "f2a8cc9e-b817-4abe-a441-121d7e469115",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793454316440
+      }
+    ],
+    "2.8 Property 3: papel insuficiente não produz efeito": [
+      {
+        "executionId": "f2a8cc9e-b817-4abe-a441-121d7e469115",
+        "chatSessionId": "sess_6a1d7768-5851-407d-b5e3-c515179f9c7e",
+        "timestamp": 1793454323531
+      }
+    ]
+  }
+}

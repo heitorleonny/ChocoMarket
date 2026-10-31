@@ -142,6 +142,8 @@ paths:
           $ref: '#/components/responses/Forbidden'
         '404':
           $ref: '#/components/responses/NotFound'
+        '422':
+          $ref: '#/components/responses/ValidationError'
       security:
         - bearerAuth: []
 
@@ -215,6 +217,8 @@ paths:
           $ref: '#/components/responses/Forbidden'
         '404':
           $ref: '#/components/responses/NotFound'
+        '422':
+          $ref: '#/components/responses/ValidationError'
       security:
         - bearerAuth: []
 
@@ -377,6 +381,8 @@ paths:
           $ref: '#/components/responses/Forbidden'
         '404':
           $ref: '#/components/responses/NotFound'
+        '422':
+          $ref: '#/components/responses/ValidationError'
       security:
         - {}
         - bearerAuth: []
@@ -433,6 +439,8 @@ paths:
           $ref: '#/components/responses/Forbidden'
         '404':
           $ref: '#/components/responses/NotFound'
+        '422':
+          $ref: '#/components/responses/ValidationError'
       security:
         - bearerAuth: []
 
@@ -521,6 +529,12 @@ paths:
                 $ref: '#/components/schemas/Order'
         '401':
           $ref: '#/components/responses/Unauthorized'
+        '403':
+          description: Somente clientes criam pedidos; administradores recebem 403.
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
         '409':
           description: |
             Estoque insuficiente, produto indisponível ou chave de
@@ -559,6 +573,8 @@ paths:
           $ref: '#/components/responses/Forbidden'
         '404':
           $ref: '#/components/responses/NotFound'
+        '422':
+          $ref: '#/components/responses/ValidationError'
       security:
         - bearerAuth: []
 
@@ -594,6 +610,8 @@ paths:
             application/problem+json:
               schema:
                 $ref: '#/components/schemas/Problem'
+        '422':
+          $ref: '#/components/responses/ValidationError'
       security:
         - bearerAuth: []
 
@@ -671,10 +689,10 @@ components:
 
   headers:
     Location:
-      description: URL do usuário criado.
+      description: URL do recurso criado, relativa à raiz da API.
       schema:
         type: string
-        format: uri
+        format: uri-reference
 
   responses:
     BadRequest:
@@ -1145,24 +1163,53 @@ components:
         request_id: req_01JZ2Y6Q3C
 
     ValidationProblem:
-      allOf:
-        - $ref: '#/components/schemas/Problem'
-        - type: object
-          required:
-            - errors
-          properties:
-            errors:
-              type: array
-              items:
-                type: object
-                additionalProperties: false
-                required:
-                  - field
-                  - message
-                properties:
-                  field:
-                    type: string
-                  message:
-                    type: string
-                  code:
-                    type: string
+      description: |
+        Problem com a lista de erros por campo. Os campos de `Problem` são
+        repetidos aqui porque `additionalProperties: false` em `Problem`
+        impediria a composição por `allOf` de aceitar `errors`.
+      type: object
+      additionalProperties: false
+      required:
+        - type
+        - title
+        - status
+        - detail
+        - code
+        - request_id
+        - errors
+      properties:
+        type:
+          type: string
+          format: uri
+          description: URI que identifica o tipo do problema.
+        title:
+          type: string
+        status:
+          type: integer
+          minimum: 400
+          maximum: 599
+        detail:
+          type: string
+        code:
+          type: string
+        request_id:
+          type: string
+          description: Identificador para correlação com os logs.
+        instance:
+          type: string
+          format: uri-reference
+        errors:
+          type: array
+          items:
+            type: object
+            additionalProperties: false
+            required:
+              - field
+              - message
+            properties:
+              field:
+                type: string
+              message:
+                type: string
+              code:
+                type: string

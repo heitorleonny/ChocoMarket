@@ -1,0 +1,10 @@
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--strict-markers"
+markers = [
+    "unit: isolated domain, schema and service tests (tests/*.py)",
+    "property: Hypothesis property-based tests (tests/property)",
+    "integration: HTTP and database integration tests (tests/integration)",
+    "contract: responses validated against openapi.yaml (tests/contract)",
+    "concurrency: transactional tests that use concurrent sessions",
+]
